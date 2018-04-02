@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>菜鸟教程(runoob.com)</title>
+    <link href="css/ionic.css" rel="stylesheet">
+  </head>
+    <body ng-app="starter" ng-controller="actionsheetCtl" >
+        <button class="button button-dark" on-hold="onHold()" class="button">长按我！</button>
+        <button class="button button-assertive" on-tap="onTap()"  class="button">长按我！</button>
+        <button class="button button-energized"  on-double-tap="onDoubleTap()" class="button">长按我！</button>
+        <button class="button button-calm" on-touch="onTouch()"  class="button">长按我！</button>
+        <button class="button button-positive" on-drag="onDrag()" class="button">长按我！</button>
+        <button class="button button-balanced" on-swipe="onSwipe()"  class="button">长按我！</button>
+        <button class="button button-royal" on-release="onRelease()"  class="button">长按我！</button>
+        <h1 style="background:red;" on-swipe-right="onSwipeRight()">hello world</h1> 
+    </body>
+    <script src="js/ionic.bundle.min.js"></script>
+    <script type="text/javascript">
+    angular.module('starter', ['ionic'])
+
+	.controller( 'actionsheetCtl',['$scope',function($scope){
+
+	    $scope.onHold=function(){
+	        alert('on-hold')
+        }
+        $scope.onTap=function(){
+	        alert('on-Tap')
+        }
+        $scope.onDoubleTap=function(){
+	        alert('on-DoubleTap')
+        }
+        $scope.onTouch=function(){
+	        alert('on-touch')
+        }
+        $scope.onDrag=function(){
+	        alert('on-drag')
+        }
+         $scope.onRelease=function(){
+	        alert('on-onRelease')
+        }
+        
+        $scope.onSwipe=function(){
+	        alert('on-Swipe')
+        }
+        $scope.onSwipeRight=function(){
+            alert('on-Swipe-right')
+        }
+
+            
+
+
+	}])
+ 	</script>
+</html>
