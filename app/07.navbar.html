@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/demos.css">
+</head>
+<body ontouchstart>
+<div class="weui-tab">
+      <div class="weui-navbar">
+        <a class="weui-navbar__item " href="#tab1">
+          选项一
+        </a>
+        <a class="weui-navbar__item  <weui-bar__item--on></weui-bar__item--on>" href="#tab2">
+          选项二
+        </a>
+        <a class="weui-navbar__item" href="#tab3">
+          选项三
+        </a>
+      </div>
+      <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item ">
+          <h1>页面一</h1>
+        </div>
+        <div id="tab2" class="weui-tab__bd-item weui-tab__bd-item--active">
+          <h1>页面二</h1>
+        </div>
+        <div id="tab3" class="weui-tab__bd-item ">
+          <h1>页面三</h1>
+        </div>
+      </div>
+    </div>
+
+<script src="src/lib/jquery-2.1.4.js"></script>
+<script src="src/lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="src/lib/jquery-weui.js"></script>
+</body>
+</html>

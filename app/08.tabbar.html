@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/demos.css">
+</head>
+<body ontouchstart>
+<div class="weui-tab">
+      <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+          <i class="weui-icon-success"></i>
+          <i class="weui-icon-success-circle"></i>
+          <i class="weui-icon-success-no-circle"></i>
+    
+        </div>
+        <div id="tab2" class="weui-tab__bd-item">
+         
+    <i class="weui-icon-cancel"></i>
+    <i class="weui-icon-search"></i>
+        </div>
+        <div id="tab3" class="weui-tab__bd-item">
+          <i class="weui-icon-info"></i>
+    <i class="weui-icon-waiting"></i>
+    <i class="weui-icon-waiting-circle"></i>
+   
+        </div>
+        <div id="tab4" class="weui-tab__bd-item">
+          <i class="weui-icon-circle"></i>
+    <i class="weui-icon-warn"></i>
+    <i class="weui-icon-download"></i>
+    <i class="weui-icon-info-circle"></i>
+        </div>
+      </div>
+
+      <div class="weui-tabbar">
+        <a href="#tab1" class="weui-tabbar__item weui-bar__item--on">
+          <span class="weui-badge" style="position: absolute;top: -.4em;right: 1em;">8</span>
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_button.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">微信</p>
+        </a>
+        <a href="#tab2" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_msg.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="#tab3" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_article.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="#tab4" class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="./images/icon_nav_cell.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我</p>
+        </a>
+      </div>
+    </div>
+<script src="src/lib/jquery-2.1.4.js"></script>
+<script src="src/lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="src/lib/jquery-weui.js"></script>
+</body>
+</html>
